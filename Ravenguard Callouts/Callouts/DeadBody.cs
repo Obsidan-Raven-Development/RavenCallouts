@@ -190,6 +190,9 @@ namespace RavenCallouts.Callouts
                     Game.LogTrivialDebug("Raven2");
 
                     Suspect.Tasks.LeaveVehicle(flags: LeaveVehicleFlags.LeaveDoorOpen);
+
+                    GameFiber.Wait(500);
+
                     Suspect.Tasks.Clear();
 
                     GameFiber.Wait(500);
@@ -200,14 +203,15 @@ namespace RavenCallouts.Callouts
 
                         GameFiber.Wait(3000);
 
-                        //Created a pursuit so backup works properly. Looks good and should run flawlessly here.
+                        // Created a pursuit so backup works properly. Looks good and should run flawlessly here.
                         Pursuit = Functions.CreatePursuit();
                         Functions.AddPedToPursuit(Pursuit, Suspect);
                         Functions.SetPursuitIsActiveForPlayer(Pursuit, true);
                         PursuitCreated = true;
-
+                        /*
                         Functions.RequestBackup(Game.LocalPlayer.Character.Position, LSPD_First_Response.EBackupResponseType.Code3, LSPD_First_Response.EBackupUnitType.LocalUnit);
                         Functions.RequestBackup(Game.LocalPlayer.Character.Position, LSPD_First_Response.EBackupResponseType.Code3, LSPD_First_Response.EBackupUnitType.LocalUnit);
+                        */
                     }
 
                     if (Suspect.IsDead)
