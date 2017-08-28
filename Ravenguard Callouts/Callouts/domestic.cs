@@ -238,8 +238,8 @@ namespace RavenCallouts.Callouts
                             }
                         }
 
-                        Game.DisplaySubtitle("Suspect: She had a knife and was threating to kill me, I had no choice", 5000);
-                        Game.DisplaySubtitle("Suspect: I ran from the house to my car and she followed me,", 5000);
+                        Game.DisplaySubtitle("Suspect: They had a knife and was threating to kill me, I had no choice", 5000);
+                        Game.DisplaySubtitle("Suspect: I ran from the house to my car and they followed me,", 5000);
                         speechCheck = 2;
 
                         while (true && speechCheck == 2)
@@ -251,7 +251,7 @@ namespace RavenCallouts.Callouts
                         }
 
                         Game.DisplaySubtitle("Suspect: I managed to get my pistol out of the glove box.", 5000);
-                        Game.DisplaySubtitle("Suspect: Thats when I saw her charging me from the porch with the knife still in her hand", 5000);
+                        Game.DisplaySubtitle("Suspect: Thats when I saw them charging me from the porch with the knife still in there hand", 5000);
                         speechCheck = 3;
                         while (true && speechCheck == 3)
                         {
@@ -261,7 +261,7 @@ namespace RavenCallouts.Callouts
                             { break; }
                         }
 
-                        Game.DisplaySubtitle("Suspect: I had no choice, I needed to defend myself so I fired one shot, not sure if I hit her or not though.", 5000);
+                        Game.DisplaySubtitle("Suspect: I had no choice, I needed to defend myself so I fired one shot, not sure if I hit them or not though.", 5000);
                         Game.DisplaySubtitle("Speak with the Victim");
                         speechCheck = 4;
 
