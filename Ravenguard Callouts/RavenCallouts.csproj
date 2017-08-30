@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComputerPlus">
-      <HintPath>API's\ComputerPlus.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V\Plugins\LSPDFR\ComputerPlus.dll</HintPath>
     </Reference>
     <Reference Include="LSPD First Response">
       <HintPath>D:\LSPDFR Ravenguard Gaming Mods\LSPD First Response.dll</HintPath>
