@@ -158,7 +158,6 @@ namespace RavenCallouts.Callouts
 
 
                 #region Suspect Flee (On Foot)
-                if (r <= 49 && r >= 11 || r == 1)
                 if (r <= 66 && r >= 46 || r == 1)
                 {
                     Game.LogTrivialDebug("Raven1");
@@ -186,7 +185,6 @@ namespace RavenCallouts.Callouts
                 #endregion
 
                 #region Suspect Fight
-                if (r >= 50 && r >= 11 && r > 3 || r == 2)
                 if (r >= 45 && r >= 25 || r == 2)
                 {
                     Game.LogTrivialDebug("Raven2");
@@ -208,7 +206,6 @@ namespace RavenCallouts.Callouts
                         Functions.SetPursuitIsActiveForPlayer(Pursuit, true);
                         PursuitCreated = true;
 
-                        Functions.RequestBackup(Game.LocalPlayer.Character.Position, LSPD_First_Response.EBackupResponseType.Code3, LSPD_First_Response.EBackupUnitType.LocalUnit);
                         Functions.RequestBackup(Game.LocalPlayer.Character.Position, LSPD_First_Response.EBackupResponseType.Pursuit, LSPD_First_Response.EBackupUnitType.LocalUnit);
                         Functions.RequestBackup(Game.LocalPlayer.Character.Position, LSPD_First_Response.EBackupResponseType.Pursuit, LSPD_First_Response.EBackupUnitType.LocalUnit);
                     }
@@ -221,7 +218,6 @@ namespace RavenCallouts.Callouts
                 #endregion
 
                 #region Suspect Flee (In Vehicle)
-                if (r <= 10 && r > 3 || r == 3)
                 if (r <= 24 && r >= 4 || r == 3)
                 {
                     Game.LogTrivialDebug("Raven3");
