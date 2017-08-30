@@ -30,7 +30,7 @@ namespace RavenCallouts.Callouts
         private int speechCheck { get; set; }
         Vehicle suspectVehicle;
         private int r;
-        private bool Debug = true;
+        private bool Debug = false;
         private int flee;
         #endregion
 

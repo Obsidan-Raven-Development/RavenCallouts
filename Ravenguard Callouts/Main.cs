@@ -72,7 +72,7 @@ namespace RavenCallouts
         {
             if (OnDuty)
             {
-                Game.DisplayNotification("~r~Raven Callouts~w~ ~y~V 0.1.4ALPHA~w~ by                    ~p~LordRaven~w~                              has been ~r~loaded~w~.");
+                Game.DisplayNotification("~r~Raven Callouts~w~ ~y~V 0.1.35 ALPHA~w~ by             ~p~LordRaven~w~                   has been ~r~loaded~w~.");
 
                 RegisterCallouts();
             }

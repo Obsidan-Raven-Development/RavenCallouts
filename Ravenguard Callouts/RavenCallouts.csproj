@@ -89,7 +89,6 @@
   <ItemGroup>
     <None Include="API%27s\LSPD First Response.dll" />
     <None Include="API%27s\RAGENativeUI.dll" />
-    <None Include="API%27s\RagePluginHookSDK.dll" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -99,6 +98,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="API%27s\RagePluginHookSDK.dll" />
     <Content Include="Release File 1.35\Raven Callouts.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

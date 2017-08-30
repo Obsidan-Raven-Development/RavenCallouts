@@ -27,7 +27,7 @@ namespace RavenCallouts.Callouts
         private bool PursuitCreated = false;
         public int speechCheck { get; set; }
         private int r;
-        private bool Debug = true;
+        private bool Debug = false;
         #endregion
 
         #region Enums
@@ -185,7 +185,7 @@ namespace RavenCallouts.Callouts
                 #endregion
 
                 #region Suspect Fight
-                if (r >= 50 && r >= 11 && r > 3 || r == 2)
+                if (/*r >= 50 && r >= 11 && r > 3 ||*/r == 2)
                 {
                     Game.LogTrivialDebug("Raven2");
 
